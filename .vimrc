@@ -2,7 +2,7 @@
 
 colorscheme desert      " color scheme
 
-syntax enable	        " enable syntax processing
+syntax enable           " enable syntax processing
 
 
 " Spaces & Tabs
