@@ -1,11 +1,11 @@
-" Color
+" 1. Color
 
 colorscheme desert      " color scheme
 
 syntax enable           " enable syntax processing
 
 
-" Spaces & Tabs
+" 2. Spaces & Tabs
 
 set tabstop=4           " number of visual spaces per TAB
 
@@ -15,8 +15,10 @@ set expandtab           " tabs are spaces
 
 set autoindent          " new line with indent
 
+set shiftwidth=4        " shift + < or > means indent with 4 width
 
-" UI config
+
+" 3. UI config
 
 set number              " show line numbers
 
@@ -25,10 +27,17 @@ set showcmd             " show command in bottom bar
 set wildmenu            " visual autocomplete for command menu
 
 set showmatch           " highlight matching [{()}]
-set matchtime=1
+
+" autocomplete a matching brace
+inoremap { {}<LEFT>
+inoremap {<ENTER> {}<LEFT><CR><ESC><S-o><TAB>
+inoremap ( ()<ESC>i
+inoremap (<ENTER> ()<LEFT><CR><ESC><S-o><TAB>
+
+inoremap " ""<LEFT>
 
 
-" Searching
+" 4. Searching
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
