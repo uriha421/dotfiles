@@ -42,3 +42,12 @@ inoremap " ""<LEFT>
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
+
+" 5. vim-plug, a package manager
+
+call plug#begin('~/.vim/plugged')
+
+" a golang package
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+call plug#end()
