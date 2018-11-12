@@ -13,6 +13,8 @@ set softtabstop=4       " number of spaces in tab when editing
 
 set expandtab           " tabs are spaces
 
+set autoindent          " new line with indent
+
 
 " UI config
 
