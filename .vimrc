@@ -47,7 +47,10 @@ set hlsearch            " highlight matches
 
 call plug#begin('~/.vim/plugged')
 
-" a golang package
+" golang plugin
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+" abbreviation plugin
+Plug 'mattn/emmet-vim'
 
 call plug#end()
