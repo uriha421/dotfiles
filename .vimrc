@@ -17,6 +17,8 @@ set autoindent          " new line with indent
 
 set shiftwidth=4        " shift + < or > means indent with 4 width
 
+set backspace=indent,eol,start  " what to delete with a delete key 
+
 
 " 3. UI config
 
@@ -25,8 +27,6 @@ set number              " show line numbers
 set showcmd             " show command in bottom bar
 
 set wildmenu            " visual autocomplete for command menu
-
-set showmatch           " highlight matching [{()}]
 
 " autocomplete a matching brace
 inoremap { {}<LEFT>
@@ -43,7 +43,12 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
 
-" 5. vim-plug, a package manager
+" 5. clipboard
+
+set clipboard+=unnamed  " share clipboards
+
+
+" 6. vim-plug, a package manager
 
 call plug#begin('~/.vim/plugged')
 
