@@ -34,9 +34,9 @@ inoremap {<ENTER> {}<LEFT><CR><ESC><S-o><TAB>
 inoremap ( ()<ESC>i
 inoremap (<ENTER> ()<LEFT><CR><ESC><S-o><TAB>
 
-inoremap " ""<LEFT>
 inoremap [ []<LEFT>
 inoremap ` ``<LEFT>
+inoremap " ""<LEFT>
 
 
 " 4. Searching
