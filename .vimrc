@@ -28,6 +28,7 @@ set showcmd             " show command in bottom bar
 
 set wildmenu            " visual autocomplete for command menu
 
+
 " autocomplete a matching brace
 inoremap { {}<LEFT>
 inoremap {<ENTER> {}<LEFT><CR><ESC><S-o><TAB>
@@ -38,6 +39,7 @@ inoremap [ []<LEFT>
 inoremap ` ``<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
+inoremap < <><LEFT>
 
 " 4. Searching
 
@@ -59,5 +61,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " abbreviation plugin
 Plug 'mattn/emmet-vim'
+
+" .vue file plugin "
+Plug 'posva/vim-vue'
 
 call plug#end()
