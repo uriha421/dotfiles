@@ -1,6 +1,6 @@
 " 1. Color
 
-colorscheme desert      " color scheme
+colorscheme molokai      " color scheme
 
 syntax enable           " enable syntax processing
 
