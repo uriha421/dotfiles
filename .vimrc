@@ -7,19 +7,19 @@ syntax enable           " enable syntax processing
 
 " 2. Spaces & Tabs
 
-set tabstop=4           " number of visual spaces per TAB
-
-set softtabstop=4       " number of spaces in tab when editing
+set autoindent          " new line with indent
 
 set expandtab           " tabs are spaces
 
-set autoindent          " new line with indent
+set tabstop=2           " number of visual spaces per TAB
 
-set shiftwidth=4        " shift + < or > means indent with 4 width
+set softtabstop=2       " number of spaces in tab when editing
 
-set backspace=indent,eol,start  " what to delete with a delete key 
+set shiftwidth=2        " shift + < or > means indent with 4 width
 
-filetype plugin indent on " differenet indent on different languages
+set backspace=indent,eol,start  " what to delete with a delete key
+
+au BufNewFile,BufRead *.go set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4 " indent config on golang
 
 
 " 3. UI config
