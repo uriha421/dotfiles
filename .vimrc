@@ -19,6 +19,8 @@ set shiftwidth=4        " shift + < or > means indent with 4 width
 
 set backspace=indent,eol,start  " what to delete with a delete key 
 
+filetype plugin indent on " differenet indent on different languages
+
 
 " 3. UI config
 
