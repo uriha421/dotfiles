@@ -30,6 +30,7 @@ set showcmd             " show command in bottom bar
 
 set wildmenu            " visual autocomplete for command menu
 
+set noswapfile          " no swap file
 
 " autocomplete a matching brace
 inoremap { {}<LEFT>
