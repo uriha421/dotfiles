@@ -62,6 +62,7 @@ call plug#begin('~/.vim/plugged')
 
 " golang plugin
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+let g:go_fmt_command = "goimports"
 
 " abbreviation plugin
 Plug 'mattn/emmet-vim'
