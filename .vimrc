@@ -20,6 +20,7 @@ set shiftwidth=2        " shift + < or > means indent with 2 width
 set backspace=indent,eol,start  " what to delete with a delete key
 
 au BufNewFile,BufRead *.go set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4 " indent config on golang
+au BufNewFile,BufRead *.sol set noexpandtab tabstop=4 softtabstop=4 shiftwidth=4 " indent config on solidity
 
 
 " 3. UI config
