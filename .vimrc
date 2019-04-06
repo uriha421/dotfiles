@@ -43,7 +43,7 @@ inoremap [ []<LEFT>
 inoremap ` ``<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
-inoremap < <><LEFT>
+au BufNewFile,BufRead *.html inoremap < <><LEFT>
 
 " 4. Searching
 
